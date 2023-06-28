@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Mudando texto")
+      VStack {
+        Text("sol viagens")
+        Text("ESPECIAL")
+        Text("BRASIL")
+        
+        List {
+          Text("Ceará")
+          Text("Rio de Janeiro")
+          Text("Atibaia")
+          Text("Belo Horizonte")
         }
-        .padding()
+      }
     }
 }
 
