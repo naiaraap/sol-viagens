@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
   
-  
-  
     var body: some View {
       GeometryReader { view in
         
@@ -77,12 +75,8 @@ struct ContentView: View {
           .offset(y: -35)
           
 
-          
-          List {
-            Text("Ceará")
-            Text("Rio de Janeiro")
-            Text("Atibaia")
-            Text("Belo Horizonte")
+          List(trips, id: \.self) { trip in
+            Text(trip.title)
           }
         }
         //.edgesIgnoringSafeArea(.all)
