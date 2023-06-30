@@ -42,24 +42,39 @@ struct ContentView: View {
         
           
           HStack{
-            Button("Hoteis") {
-              /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            Button(action: {}) {
+              Text("Hotéis")
+                .foregroundColor(.white)
+                .font(.custom("Avenir Medium", size: 17))
+                
             }
-            .font(.custom("Avenir Medium", size: 17))
+            .frame(width: 100, height: 50, alignment: .center)
+            .overlay(
+              RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.blue, lineWidth: 10))
             .background(.blue)
-            .foregroundColor(.white)
-            .frame(width: 100, height: 50, alignment: .center)
+            .offset(x: 50)
             
+            Spacer()
             
-            Button("Pacotes") {
-              /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            Button(action: {}) {
+              Text("Pacotes")
+                .foregroundColor(.white)
+                .font(.custom("Avenir Medium", size: 17))
+                
             }
-            .font(.custom("Avenir Medium", size: 17))
-            .foregroundColor(.white)
-            .background(.orange)
             .frame(width: 100, height: 50, alignment: .center)
+            .overlay(
+              RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.orange, lineWidth: 10))
+            .background(.orange)
+            .offset(x: -50)
+            
+            
+            
             
           }
+          .offset(y: -35)
           
 
           
@@ -70,7 +85,8 @@ struct ContentView: View {
             Text("Belo Horizonte")
           }
         }
-        
+        //.edgesIgnoringSafeArea(.all)
+      
       }
       
     }
