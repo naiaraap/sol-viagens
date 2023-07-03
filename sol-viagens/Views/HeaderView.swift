@@ -1,18 +1,16 @@
 //
-//  ContentView.swift
+//  HeaderView.swift
 //  sol-viagens
 //
-//  Created by Naiara de Almeida Pantuza on 28/06/23.
+//  Created by Naiara de Almeida Pantuza on 03/07/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-  
+struct HeaderView: View {
     var body: some View {
       GeometryReader { view in
-        
-        VStack{
+        VStack {
           VStack {
             Text("sol viagens")
               .foregroundColor(Color.white)
@@ -37,14 +35,14 @@ struct ContentView: View {
           }
           .frame(width: view.size.width, height: 180, alignment: .top)
           .background(Color.purple)
-        
+          
           
           HStack{
             Button(action: {}) {
               Text("Hotéis")
                 .foregroundColor(.white)
                 .font(.custom("Avenir Medium", size: 17))
-                
+              
             }
             .frame(width: 100, height: 50, alignment: .center)
             .overlay(
@@ -59,7 +57,7 @@ struct ContentView: View {
               Text("Pacotes")
                 .foregroundColor(.white)
                 .font(.custom("Avenir Medium", size: 17))
-                
+              
             }
             .frame(width: 100, height: 50, alignment: .center)
             .overlay(
@@ -73,32 +71,14 @@ struct ContentView: View {
             
           }
           .offset(y: -35)
-          
-
-          List(trips, id: \.self) { trip in
-            VStack (alignment: .leading) {
-              Text(trip.title)
-              Image(trip.image)
-                .resizable()
-                .frame(height: 125)
-              HStack {
-                Text(trip.numberOfDays)
-                Spacer()
-                Text(trip.value)
-              }
-            }
-          }
         }
-        //.edgesIgnoringSafeArea(.all)
-      
       }
-      
     }
-
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HeaderView()
+        .previewLayout(.fixed(width: 400, height: 250))
     }
 }
