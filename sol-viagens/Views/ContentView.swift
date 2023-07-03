@@ -11,22 +11,17 @@ struct ContentView: View {
   
     var body: some View {
       GeometryReader { view in
-        
         VStack{
           
+          HeaderView()
+            .frame(width: view.size.width, height: 200, alignment: .top)
+          
+          
+          
           List(trips, id: \.self) { trip in
-            VStack (alignment: .leading) {
-              Text(trip.title)
-              Image(trip.image)
-                .resizable()
-                .frame(height: 125)
-              HStack {
-                Text(trip.numberOfDays)
-                Spacer()
-                Text(trip.value)
-              }
-            }
+            TripCellView(trip: trip)
           }
+          
         }
         //.edgesIgnoringSafeArea(.all)
       

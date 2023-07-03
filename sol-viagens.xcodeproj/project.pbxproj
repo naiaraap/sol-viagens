@@ -11,6 +11,7 @@
 		4C00C5BB2A4C6FBD009347DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00C5BA2A4C6FBD009347DD /* ContentView.swift */; };
 		4C00C5BD2A4C6FC0009347DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C00C5BC2A4C6FC0009347DD /* Assets.xcassets */; };
 		4C00C5C02A4C6FC0009347DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C00C5BF2A4C6FC0009347DD /* Preview Assets.xcassets */; };
+		4C84093A2A531122007CC6CB /* TripCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8409392A531122007CC6CB /* TripCellView.swift */; };
 		4C89A8632A5300310017E30A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C89A8622A5300310017E30A /* HeaderView.swift */; };
 		4CC8F46C2A4F58B100E939E6 /* trips.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8F46B2A4F58B100E939E6 /* trips.json */; };
 		4CC8F46F2A4F64AB00E939E6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8F46E2A4F64AB00E939E6 /* Trip.swift */; };
@@ -23,6 +24,7 @@
 		4C00C5BA2A4C6FBD009347DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C00C5BC2A4C6FC0009347DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C00C5BF2A4C6FC0009347DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C8409392A531122007CC6CB /* TripCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCellView.swift; sourceTree = "<group>"; };
 		4C89A8622A5300310017E30A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		4CC8F46B2A4F58B100E939E6 /* trips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trips.json; sourceTree = "<group>"; };
 		4CC8F46E2A4F64AB00E939E6 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				4C00C5BA2A4C6FBD009347DD /* ContentView.swift */,
 				4C89A8622A5300310017E30A /* HeaderView.swift */,
+				4C8409392A531122007CC6CB /* TripCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				4C00C5BB2A4C6FBD009347DD /* ContentView.swift in Sources */,
 				4C00C5B92A4C6FBD009347DD /* sol_viagensApp.swift in Sources */,
 				4CC8F4722A4F6C2F00E939E6 /* Data.swift in Sources */,
+				4C84093A2A531122007CC6CB /* TripCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
