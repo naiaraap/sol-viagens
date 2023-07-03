@@ -76,7 +76,17 @@ struct ContentView: View {
           
 
           List(trips, id: \.self) { trip in
-            Text(trip.title)
+            VStack (alignment: .leading) {
+              Text(trip.title)
+              Image(trip.image)
+                .resizable()
+                .frame(height: 125)
+              HStack {
+                Text(trip.numberOfDays)
+                Spacer()
+                Text(trip.value)
+              }
+            }
           }
         }
         //.edgesIgnoringSafeArea(.all)
