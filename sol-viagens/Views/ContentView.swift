@@ -21,6 +21,16 @@ struct ContentView: View {
           List(trips, id: \.self) { trip in
             TripCellView(trip: trip)
           }
+          .listStyle(PlainListStyle())
+          
+          
+          
+        
+        
+          
+          
+          
+        
           
         }
         //.edgesIgnoringSafeArea(.all)
