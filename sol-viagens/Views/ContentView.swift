@@ -24,6 +24,9 @@ struct ContentView: View {
             TripCellView(trip: trip)
           }
           .listStyle(PlainListStyle())
+          .padding(.top, self.horizontalSizeClass == .compact ? 30: 40)
+          .padding(.bottom, self.horizontalSizeClass == .compact ? 10: 20)
+          
           
           
           
