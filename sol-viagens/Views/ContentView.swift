@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
   
+  @Environment(\.horizontalSizeClass) var horizontalSizeClass
+  
     var body: some View {
       GeometryReader { view in
         VStack{
           
           HeaderView()
-            .frame(width: view.size.width, height: 200, alignment: .top)
+            .frame(width: view.size.width, height: self.horizontalSizeClass == .compact ? 200 : 310, alignment: .top)
           
           
           
