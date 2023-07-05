@@ -35,8 +35,18 @@ struct TripCellView: View {
 }
 
 struct TripCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        TripCellView(trip: trips[0])
-        .previewLayout(.fixed(width: 350, height: 200))
+  static var previews: some View {
+    
+    Group {
+      
+      TripCellView(trip: trips[0])
+        .environment(\.horizontalSizeClass, .compact)
+        .previewLayout(.fixed(width: 360, height: 200))
+      
+      TripCellView(trip: trips[0])
+        .environment(\.horizontalSizeClass, .regular)
+        .previewLayout(.fixed(width: 835, height: 320))
     }
+    
+  }
 }
