@@ -22,10 +22,11 @@ struct ContentView: View {
             
             
             List(trips, id: \.self) { trip in
-              NavigationLink(destination: MapView(coordinate: trip.location)){
+              NavigationLink(destination: MapView(coordinate: trip.location).navigationBarTitle("Localização", displayMode: .inline)){
                 TripCellView(trip: trip)
               }
             }
+            .navigationBarTitle("")
             .listStyle(PlainListStyle())
             .padding(.top, self.horizontalSizeClass == .compact ? 30: 40)
             .padding(.bottom, self.horizontalSizeClass == .compact ? 10: 20)
@@ -33,7 +34,8 @@ struct ContentView: View {
           
         }
       }
-      
+      .navigationViewStyle(StackNavigationViewStyle())
+    
     }
 
 }
